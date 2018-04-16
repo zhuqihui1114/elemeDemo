@@ -18,7 +18,7 @@
         </router-link>
       </div>
     </div>
-    <router-view></router-view>
+    <router-view :seller="seller"></router-view>
   </div>
 </template>
 
@@ -38,7 +38,7 @@
     },
     created() {
 
-      this.$http.get('data.json').then(function (res) {
+      this.$http.get('seller.json').then(function (res) {
         if (res.status === ERR_OK) {
           this.seller = Object.assign({}, this.seller, res.body.seller);
         }
