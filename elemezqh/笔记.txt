@@ -1,0 +1,19 @@
+1、webpack-dev-server 无法通过ip访问？
+
+  http://localhost:8080 work
+
+  http://196.168.1.102:8080 unwork
+
+  解决：
+
+  配置webpack通过ip访问服务
+  在package.json 中 dev 下 加上  “ --host 0.0.0.0”
+
+
+2、指定端口  在dev 下 加上 “ --port 8084”
+
+3、flex布局
+
+4、Vue动画重点学习下
+
+
