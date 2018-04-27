@@ -40,7 +40,7 @@
 
       this.$http.get('seller.json').then(function (res) {
         if (res.status === ERR_OK) {
-          this.seller = Object.assign({}, this.seller, res.body.seller);
+          this.seller = res.body.seller;
         }
       }, function (res) {
         alert(res.status);

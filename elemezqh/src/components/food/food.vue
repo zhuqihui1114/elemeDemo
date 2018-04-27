@@ -30,7 +30,7 @@
       <split></split>
       <div class="rating">
         <h1 class="title">商品评价</h1>
-        <ratingselect :select-type="selectType" :only-content="onlyContent" :desc="desc"
+        <ratingselect :select-type="selectType" :only-content="onlyContent"
                       :ratings="food.ratings"></ratingselect>
         <div class="rating-wrapper">
           <ul v-show="food.ratings && food.ratings.length">
@@ -73,11 +73,7 @@
         showFlag: false,
         selectType: ALL,
         onlyContent: true,
-        desc: {
-          all: '全部',
-          positive: '推荐',
-          negative: '吐槽'
-        },
+
       };
     },
     mounted(){

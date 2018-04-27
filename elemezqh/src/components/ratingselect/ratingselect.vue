@@ -36,21 +36,16 @@
         type: Boolean,
         default: false
       },
-      desc: {
-        type: Object,
-        default() {
-          return {
-            all: '全部',
-            positive: '满意',
-            negative: '不满意'
-          };
-        }
-      }
     },
     data(){
       return {
         myselectType : ALL,
-        myonlyContent : false
+        myonlyContent : false,
+        desc: {
+          all: '全部',
+          positive: '推荐',
+          negative: '吐槽'
+        }
       }
     },
     mounted(){
