@@ -90,12 +90,19 @@
       created() {
         this.classMap = ['decrease', 'discount', 'special', 'invoice', 'guarantee'];
       },
+      watch: {
+        'seller'() {
+          this.$nextTick(() => {
+            this._initScroll();
+            this._initPics();
+          });
+        }
+      },
       mounted() {
         this.$nextTick(() => {
           this._initScroll();
           this._initPics();
         });
-
       },
       computed: {
         favoriteText() {
