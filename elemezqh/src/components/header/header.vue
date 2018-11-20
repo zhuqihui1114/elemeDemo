@@ -236,7 +236,7 @@
         width: 100%
         min-height: 100%
         .detail-main
-          margin-top: 64px
+          padding-top: 64px
           padding-bottom: 64px
           .name
             line-height: 16px
